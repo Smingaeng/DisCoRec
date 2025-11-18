@@ -55,3 +55,13 @@ model:
     kd_int_temperature: 0.2
     kd_int_weight_2: 1.0e-7
     kd_int_weight_3: 1.0e-7
+  # for yelp
+  yelp:
+    layer_num: 3
+    reg_weight: 1.0e-7
+    kd_weight: 1.0e-2
+    kd_temperature: 0.2
+    kd_int_weight: 1.0e-2
+    kd_int_temperature: 0.2
+    kd_int_weight_2: 1.0e-7
+    kd_int_weight_3: 1.0e-7

@@ -48,5 +48,12 @@ model:
     mask_ratio: 0.15
     recon_weight: 0.05
     re_temperature: 0.2
+  # for yelp
+  yelp:
+    layer_num: 2
+    reg_weight: 1.0e-7
+    mask_ratio: 0.05
+    recon_weight: 0.01
+    re_temperature: 0.1
 
 

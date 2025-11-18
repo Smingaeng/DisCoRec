@@ -11,9 +11,11 @@ import torch.utils.data as data
 class DataHandlerGeneralCF:
     def __init__(self):
         if configs['data']['name'] == 'amazon_movie':
-            predir = '/MV-LLMRec/data/amazon_movie/'
+            predir = '/home/kyung/MV-LLMRec//data/amazon_movie/'
         elif configs['data']['name'] == 'amazon_book':
-            predir = '/MV-LLMRec/data/amazon_book/'
+            predir = '/home/kyung/MV-LLMRec//data/amazon_book/'
+        elif configs['data']['name'] == 'yelp':
+            predir = '/home/kyung/MV-LLMRec//data/yelp/'
         else:
             raise NotImplementedError
         self.trn_file = predir + 'trn_mat.pkl'

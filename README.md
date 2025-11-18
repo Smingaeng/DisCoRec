@@ -1,28 +1,21 @@
-# MV-LLMRec: Multi-View Representation Learning with Large Language Models for Recommendation
+# 🎯 DisCoRec: LLM-Guided Disentangled Conformity-aware Recommendation
 Minkyung Song, Soyoung Park, Sungsu Lim*
 
-## Franework
-<img width="2667" height="1500" alt="framework_2-1" src="https://github.com/user-attachments/assets/75a6b044-5256-4b62-90e8-2e9eea7629c4" />
+## 🧩 Franework
+<img src="framework.png" />
 
-## Dependencies
-Below is a CUDA 11.x example. (If you use a different CUDA/Torch combo, install the matching torch-scatter/torch-sparse wheels.)
-
+## 📦 Dependencies
+### 1) Create Conda Environment
 ```bash
-conda create -y -n mv-llmrec python=3.9
-conda activate mv-llmrec
-
-# PyTorch (CUDA 11.6 example)
-pip install torch==1.13.1+cu116 torchvision==0.14.1+cu116 torchaudio==0.13.1 \
---extra-index-url https://download.pytorch.org/whl/cu116
-
-# PyG packages (pick wheels that match your Torch/CUDA)
-pip install torch-scatter -f https://data.pyg.org/whl/torch-1.13.1+cu117.html
-pip install torch-sparse -f https://data.pyg.org/whl/torch-1.13.1+cu117.html
-
-pip install pyyaml tqdm
+conda env create -f environment.yml
+conda activate discorec_env
+```
+### 2) Install Additional Python Packages
+```bash
+pip install -r requirements.txt
 ```
 
-## Dataset Structure and Download
+## 📚 Dataset Structure and Download
 
 **Amazon-book**/ **Amazon-movie**
 
@@ -44,32 +37,32 @@ Amazon-book/ Amazon-movie [GoogleDrive](https://drive.google.com/drive/folders/1
 Amazon-Book: Uses the preprocessed split provided by RLMRec.
 Amazon-Movie: Uses a reprocessed split prepared for this project.
 
-## Train & Evaluate
+## 🚀 Train & Evaluate
 
 - **Backbone**
   ```bash
-  python encoder/train_encoder.py --model {model_name} --dataset {dataset} --cuda 0
+  python encoder/train_encoder.py --model lightgcn --dataset {dataset} --cuda 0
 
 - **RLMRec**
   ```bash
-  python encoder/train_encoder.py --model {model_name}_plus --dataset {dataset} --cuda 0
+  python encoder/train_encoder.py --model lightgcn_plus --dataset {dataset} --cuda 0
   ```
   ```bash
-  python encoder/train_encoder.py --model {model_name}_gene --dataset {dataset} --cuda 0
+  python encoder/train_encoder.py --model lightgcn_gene --dataset {dataset} --cuda 0
 
 - **IRLLRec**
   ```bash
-  python encoder/train_encoder.py --model {model_name}_int --dataset movie --cuda 0
+  python encoder/train_encoder.py --model lightgcn_int --dataset {dataset} --cuda 0
 
-- **MV-LLMRec**
+- **DisCoRec (Ours)**
   ```bash
-  python encoder/train_encoder.py --model {model_name}_mv --dataset {dataset} --cuda 0
+  python encoder/train_encoder.py --model discorec --dataset {dataset} --cuda 0
 
-Hyperparameters:
+⚙️ Hyperparameters:
 
 The hyperparameters of each model are stored in encoder/config/modelconf.
 
-## Acknowledgement
+## 🙌 Acknowledgement
 
 For fair comparison and reproducibility, we reuse parts of the IRLLRec and RLMRec codebases (training/evaluation routines and related utilities). We also adapt user/item profiling and embedding pipeline components. Source repositories:
 

@@ -8,8 +8,8 @@ import torch.nn as nn
 
 def parse_configure(model=None, dataset=None):
     parser = argparse.ArgumentParser(description='RLMRec')
-    parser.add_argument('--model', type=str, default='LightGCN', help='Model name')
-    parser.add_argument('--dataset', type=str, default='amazon', help='Dataset name')
+    parser.add_argument('--model', type=str, default='discorec', help='Model name')
+    parser.add_argument('--dataset', type=str, default='yelp', help='Dataset name')
     parser.add_argument('--device', type=str, default='cuda', help='cpu or cuda')
     parser.add_argument('--seed', type=int, default=None, help='Device number')
     parser.add_argument('--cuda', type=str, default='0', help='Device number')
@@ -33,12 +33,12 @@ def parse_configure(model=None, dataset=None):
         args.dataset = dataset
 
     # find yml file
-    if not os.path.exists('/MV-LLMRec/encoder/config/modelconf/{}.yml'.format(model_name)):
+    if not os.path.exists('/home/kyung/MV-LLMRec//encoder/config/modelconf/{}.yml'.format(model_name)):
     # if not os.path.exists('config/modelconf/{}.yml'.format(model_name)):
         raise Exception("Please create the yaml file for your model first.")
 
     # read yml file
-    with open('MV-LLMRec/encoder/config/modelconf/{}.yml'.format(model_name), encoding='utf-8') as f:
+    with open('/home/kyung/MV-LLMRec//encoder/config/modelconf/{}.yml'.format(model_name), encoding='utf-8') as f:
     # with open('config/modelconf/{}.yml'.format(model_name), encoding='utf-8') as f:
         config_data = f.read()
         configs = yaml.safe_load(config_data)
@@ -52,15 +52,15 @@ def parse_configure(model=None, dataset=None):
             configs['train']['seed'] = args.seed
 
         # semantic embeddings
-        usrprf_embeds_path = "/MV-LLMRec/data/{}/usr_emb_np.pkl".format(configs['data']['name'])
-        itmprf_embeds_path = "/MV-LLMRec/data/{}/itm_emb_np.pkl".format(configs['data']['name'])
+        usrprf_embeds_path = "/home/kyung/MV-LLMRec/data/{}/usr_emb_np.pkl".format(configs['data']['name'])
+        itmprf_embeds_path = "/home/kyung/MV-LLMRec/data/{}/itm_emb_np.pkl".format(configs['data']['name'])
         with open(usrprf_embeds_path, 'rb') as f:
             configs['usrprf_embeds'] = pickle.load(f)
         with open(itmprf_embeds_path, 'rb') as f:
             configs['itmprf_embeds'] = pickle.load(f)
 
-        usrint_embeds_path = "/MV-LLMRec/data/{}/user_intent_emb_3.pkl".format(configs['data']['name'])
-        itmint_embeds_path = "/MV-LLMRec/data/{}/item_intent_emb_3.pkl".format(configs['data']['name'])
+        usrint_embeds_path = "/home/kyung/MV-LLMRec/data/{}/user_intent_emb_3.pkl".format(configs['data']['name'])
+        itmint_embeds_path = "/home/kyung/MV-LLMRec/data/{}/item_intent_emb_3.pkl".format(configs['data']['name'])
         with open(usrint_embeds_path, 'rb') as f:
             configs['usrint_embeds'] = pickle.load(f)
         with open(itmint_embeds_path, 'rb') as f:
@@ -68,8 +68,8 @@ def parse_configure(model=None, dataset=None):
 
         # # conformity embeddings
         #'''
-        usrint_embeds_path = "/MV-LLMRec/data/{}/user_conf_emb.pkl".format(configs['data']['name'])
-        itmint_embeds_path = "/MV-LLMRec/data/{}/item_conf_emb.pkl".format(configs['data']['name'])
+        usrint_embeds_path = "/home/kyung/MV-LLMRec/data/{}/user_conf_emb.pkl".format(configs['data']['name'])
+        itmint_embeds_path = "/home/kyung/MV-LLMRec/data/{}/item_conf_emb.pkl".format(configs['data']['name'])
         with open(usrint_embeds_path, 'rb') as f:
             configs['usrconf_embeds'] = pickle.load(f)
         with open(itmint_embeds_path, 'rb') as f:

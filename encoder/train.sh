@@ -1,6 +1,3 @@
-#!/bin/bash
-
-# 运行 Python 脚本五次
 for i in {1..5}
 do
    echo "Running iteration $i..."
