@@ -66,7 +66,7 @@ Amazon-Movie: Uses a reprocessed split prepared for this project.
 
 The hyperparameters of each model are stored in encoder/config/modelconf.
 
-## 🙌 Acknowledgement
+🙌 Acknowledgement
 
 For fair comparison and reproducibility, we reuse parts of the IRLLRec and RLMRec codebases (training/evaluation routines and related utilities). We also adapt user/item profiling and embedding pipeline components. Source repositories:
 
