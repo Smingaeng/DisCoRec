@@ -2,7 +2,7 @@
 Minkyung Song, Soyoung Park, Sungsu Lim*
 
 ## 🧩 Framework
-<img width="1640" height="431" alt="WWW_framework" src="https://github.com/user-attachments/assets/0999a1fd-9a58-45e4-b120-df86d7961b68" />  
+<img width="1640" height="431" alt="WWW_framework" src="https://github.com/user-attachments/assets/d6803c35-6d90-47c1-b3ec-f54a72451954" />
 
 &nbsp;
 
