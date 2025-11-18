@@ -3,9 +3,7 @@ Minkyung Song, Soyoung Park, Sungsu Lim*
 
 ## 🧩 Framework
 <img width="1640" height="431" alt="WWW_framework" src="https://github.com/user-attachments/assets/0999a1fd-9a58-45e4-b120-df86d7961b68" />  
-<br>
-<br>
-**Model Specifications:**
+<br> <br> **Model Specifications:**
 - **LLM Generator:** Qwen2.5-14B-Instruct
 - **Encoders:** text-embedding-ada-002, text-embedding-3-large
 
