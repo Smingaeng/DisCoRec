@@ -2,7 +2,7 @@
 Minkyung Song, Soyoung Park, Sungsu Lim*
 
 ## 🧩 Franework
-<img src="framework.png" />
+<img width="1640" height="431" alt="WWW_framework" src="https://github.com/user-attachments/assets/c78fa904-cebc-45aa-8cb4-10815c609e02" />
 
 ## 📦 Dependencies
 ### 1) Create Conda Environment
