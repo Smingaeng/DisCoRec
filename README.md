@@ -1,9 +1,10 @@
 # 🎯 DisCoRec: LLM-Guided Disentangled Conformity-aware Recommendation
 Minkyung Song, Soyoung Park, Sungsu Lim*
 
-## 🧩 Franework
+## 🧩 Framework
 <img width="1640" height="431" alt="WWW_framework" src="https://github.com/user-attachments/assets/0999a1fd-9a58-45e4-b120-df86d7961b68" />  
-
+<br>
+<br>
 **Model Specifications:**
 - **LLM Generator:** Qwen2.5-14B-Instruct
 - **Encoders:** text-embedding-ada-002, text-embedding-3-large
@@ -45,26 +46,26 @@ Amazon-Movie: Uses a reprocessed split prepared for this project.
 
 - **AlphaRec**
   ```bash
-  python encoder/train_encoder.py --model alpharec --dataset {dataset} --cuda 0
+  python encoder/train_encoder.py --model alpharec --dataset {dataset} --cuda 0```
 
 - **LightGCN**
   ```bash
-  python encoder/train_encoder.py --model lightgcn --dataset {dataset} --cuda 0
+  python encoder/train_encoder.py --model lightgcn --dataset {dataset} --cuda 0```
 
 - **RLMRec**
   ```bash
-  python encoder/train_encoder.py --model lightgcn_plus --dataset {dataset} --cuda 0
+  python encoder/train_encoder.py --model lightgcn_plus --dataset {dataset} --cuda 0```
   ```
   ```bash
-  python encoder/train_encoder.py --model lightgcn_gene --dataset {dataset} --cuda 0
+  python encoder/train_encoder.py --model lightgcn_gene --dataset {dataset} --cuda 0```
 
 - **IRLLRec**
   ```bash
-  python encoder/train_encoder.py --model lightgcn_int --dataset {dataset} --cuda 0
+  python encoder/train_encoder.py --model lightgcn_int --dataset {dataset} --cuda 0```
 
 - **DisCoRec (Ours)**
   ```bash
-  python encoder/train_encoder.py --model discorec --dataset {dataset} --cuda 0
+  python encoder/train_encoder.py --model discorec --dataset {dataset} --cuda 0```
 
 ⚙️ Hyperparameters:
 
