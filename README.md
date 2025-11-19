@@ -7,7 +7,7 @@ Minkyung Song, Soyoung Park, Sungsu Lim*
 &nbsp;
 
 **Model Specifications:**
-- **LLM Generator:** Qwen2.5-14B-Instruct
+- **LLM Model:** Qwen2.5-14B-Instruct
 - **Encoders:** text-embedding-ada-002, text-embedding-3-large
 
 ## 📦 Dependencies
