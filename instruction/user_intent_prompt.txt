@@ -1,0 +1,20 @@
+Use the following thought process to summarize the user's intent:
+
+### INTERNAL THOUGHT PROCESS
+(Use the following steps for your reasoning. Do NOT output these steps in your final answer.)
+
+Step 1: Extract key attributes from each movies:
+Identify positive aspects from the "description" and "review" that the user highlights (e.g., creative menu, relaxed atmosphere, friendly service).
+Identify any negative aspects the user mentions (e.g., slow service, lack of cleanliness, inconsistent food quality).
+
+Step 2: Aggregate the user's preferences:
+Based on the positive aspects, identify what the user appreciates most across the movies they interacted with.
+Based on the negative aspects, determine what the user seeks to avoid in their experiences.
+
+Step 3: Generalize the user's overall intent:
+Combine the preferences and dislikes to form a summary of what the user is generally looking for in their interactions with movies.
+
+### CONSTRAINTS AND OUTPUT FORMAT
+- Your final output MUST be a single, continuous paragraph. Do not use bullet points or multiple paragraphs.
+- It MUST begin with the prefix `Intent:` followed by a single space.
+- Do NOT include any other text, titles, explanations, or your reasoning steps (like "Step 1:") in the final output.
