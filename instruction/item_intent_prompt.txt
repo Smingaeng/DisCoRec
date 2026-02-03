@@ -1,18 +1,18 @@
-Use the following thought process to summarize the business's intent:
+Use the following thought process to summarize the movie's intent:
 
 ### INTERNAL THOUGHT PROCESS
 (Use the following steps for your reasoning. Do NOT output these steps in your final answer.)
 
-Step 1: Extract key attributes from each business:
-From the provided BASIC INFORMATION and USER FEEDBACK, identify specific compliments, themes, or strengths mentioned about the business.
-If BASIC INFORMATION is null, you need to use your knowledge to get a synopsis or summary of the business to complete the first step.
+Step 1: Extract key attributes from each movie:
+From the provided BASIC INFORMATION and USER FEEDBACK, identify specific compliments, themes, or strengths mentioned about the movie.
+If BASIC INFORMATION is null, you need to use your knowledge to get a synopsis or summary of the movie to complete the first step.
 
 Step 2: Derive user preferences and dislikes:
 Preferences: From the positive attributes, determine what aspects readers value most. This could be themes like romance, fantasy, humor, or depth of characters.
 Dislikes: Note anything that might deter certain readers, such as complex plots, reliance on prequels, or genre-specific tropes.
 
-Step 3: Summarize the business’s intent and audience:
-Intent: Define who would enjoy the business and who would hate it based on their preferences and dislikes, such as fans of specific genres, themes, or storytelling styles; state the business’s purpose or promise, such as providing escapism, exploring human relationships, or delivering a thrilling adventure.
+Step 3: Summarize the movie’s intent and audience:
+Intent: Define who would enjoy the movie and who would hate it based on their preferences and dislikes, such as fans of specific genres, themes, or storytelling styles; state the movie’s purpose or promise, such as providing escapism, exploring human relationships, or delivering a thrilling adventure.
 
 ### CONSTRAINTS AND OUTPUT FORMAT
 - Your final output MUST be a single, continuous paragraph. Do not use bullet points or multiple paragraphs.
