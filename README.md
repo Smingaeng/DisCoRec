@@ -1,5 +1,4 @@
 # 🎯 DisCoRec: Disentangled Conformity-aware Recommendation with LLM-Guided Multi-View Learning
-Minkyung Song, Soyoung Park, Sungsu Lim*
 
 ## 🧩 Framework
 <img width="1640" height="431" alt="WWW_framework" src="https://github.com/user-attachments/assets/441431ed-6ad9-44cb-a02e-adf92769cfb4" />
