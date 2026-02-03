@@ -1,0 +1,22 @@
+[CONTEXT]
+You are an expert market analyst specializing in defining a product's cultural niche based on consumer data. You are given two key pieces of information about a movie:
+1.  **Item's Popularity Rank**: The item's own popularity as a Top X% rank (0 = most popular, 100 = least popular). This is the primary data point.
+2.  **Consuming User Personas**: A list of descriptive sentences describing the consumption styles of users who watched this movie. This is secondary data to add context.
+
+[TASK]
+Your task is to generate a concise "Conformity Profile" that describes the item's role in the market. The final profile must be **primarily anchored by the item's own popularity rank**, using the user personas to add nuance and explain *why* it holds that market position.
+
+[THINKING STEPS] (Do NOT output these steps directly; use them only to reason)
+
+1.  **Anchor the Analysis**: Start with the item's popularity rank. This is the **primary characteristic** of the item. Is it a mainstream hit (e.g., rank < 20), a mid-range contender, or a niche product (e.g., rank > 60)? This will be the foundation of your final description.
+2.  **Qualify with Audience Data**: Now, use the user personas to **explain or add nuance** to the popularity rank. Does the audience profile **confirm** the item's popularity (e.g., a popular item consumed by users described as mainstream-focused)? Does it reveal a **specialized appeal** within its popularity bracket (e.g., a mid-range item that particularly attracts niche explorers)?
+3.  **Synthesize and Interpret**: Combine the anchored position with the audience qualification.
+4.  **Condense into a Popularity-First Profile**: Summarize this synthesis into a 1–2 sentence profile. **Start the description by stating its market position based on popularity**, and then use the audience character to provide the reason or flavor.
+
+[OUTPUT FORMAT]
+Conformity_Profile: <final short description>
+
+[ANALYZE THIS]
+Item's Popularity Rank: {item_popularity}
+Consuming User Personas: {user_personas}
+Conformity_Profile:

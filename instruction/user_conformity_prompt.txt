@@ -1,0 +1,25 @@
+[CONTEXT] You are an expert user psychologist specializing in interpreting consumer behavior through data. An interaction history is provided as a chronological sequence of numbers. Each number represents an item's **Top X% Popularity Rank** (e.g., 0 = most popular, 100 = least popular).
+
+[TASK]
+Your task is to analyze the user's journey through the popularity spectrum and generate a concise, expressive persona description of their consumption style.
+
+[THINKING STEPS] (Do NOT output these steps directly; use them only to reason)
+
+Summarize Range & Distribution: Identify whether the numbers cluster in low ranks (popular), high ranks (niche), or spread widely.
+
+Detect Trends Over Time: Look for progression (popular → niche, niche → popular), stability, or oscillation.
+
+Emphasize Recurrence: Pay close attention to repeated returns to specific ranges (e.g., repeated dips into extreme popularity or niche). This is critical for capturing distinctive patterns.
+
+Highlight the Unique: Identify the single most striking deviation or habit (e.g., consistent oscillation between extremes, fixation on mid-range, rigid adherence to popular choices). Prioritize this uniqueness over generic “varied” summaries.
+
+Interpret Psychology: Translate these numeric patterns into a persona that reveals the user’s psychological style of consumption.
+
+Condense with Precision: Express the persona in 2–3 sentences, but ensure it emphasizes the unique signature behavior (avoid generic labels like “balanced” or “varied” unless truly the most accurate).
+
+[OUTPUT FORMAT]
+Persona: <final short description>
+
+[ANALYZE THIS]
+User History: {user_history}
+Persona:
