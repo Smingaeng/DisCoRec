@@ -24,6 +24,12 @@ pip install -r requirements.txt
 
 **Amazon-book**/ **Amazon-movie**
 
+### Dataset Statistics
+| Dataset       | \|U\| (Users) | \|I\| (Items) | \|R\| (Interactions) | Density |
+|--------------|--------------:|--------------:|---------------------:|--------:|
+| Amazon-Movie |        10,461 |         7,730 |              188,839 |  0.0023 |
+| Amazon-Book  |        11,000 |         9,332 |              120,464 |  0.0012 |
+
 You can download intent-based semantic embedding files in the following datasets:
 Amazon-book/ Amazon-movie [GoogleDrive](https://drive.google.com/drive/folders/1rd2cppCrpoydvI1yvg5sIK2S68sBcn70?usp=sharing)
 
