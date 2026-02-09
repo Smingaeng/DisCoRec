@@ -45,7 +45,8 @@ Amazon-book/ Amazon-movie [GoogleDrive](https://drive.google.com/drive/folders/1
 |--- user_conf_emb.pkl # user conformity embeddings
 |--- item_conf_emb.pkl # item conformity embeddings
 ```
-Amazon-Book uses the preprocessed split provided by RLMRec, while Amazon-Movie is constructed by us following the same protocol. We apply 5-core filtering, remove interactions with ratings below 3, uniformly sample 20% of users after filtering, and split each dataset into training/validation/test sets with a 3:1:1 ratio.
+Amazon-Book uses the preprocessed split provided by RLMRec, while Amazon-Movie is constructed by us following the same protocol. 
+We apply 5-core filtering, remove interactions with ratings below 3, uniformly sample 20% of users after filtering, and split each dataset into training/validation/test sets with a 3:1:1 ratio.
 
 ## 🚀 Train & Evaluate
 
