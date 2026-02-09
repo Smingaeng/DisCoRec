@@ -55,11 +55,6 @@ Amazon-book/ Amazon-movie [GoogleDrive](https://drive.google.com/drive/folders/1
 
 ## 🚀 Train & Evaluate
 
-- **AlphaRec**
-  ```bash
-  python encoder/train_encoder.py --model alpharec --dataset {dataset} --cuda 0
-  ```
-
 - **LightGCN**
   ```bash
   python encoder/train_encoder.py --model lightgcn --dataset {dataset} --cuda 0
