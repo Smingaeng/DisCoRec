@@ -83,9 +83,9 @@ Amazon-book/ Amazon-movie [GoogleDrive](https://drive.google.com/drive/folders/1
 We use DICE, PD, and DCCL as disentanglement-based baselines. We rely on publicly available implementations released by the authors.  
 Please refer to the original papers for training details and hyperparameter settings, and run them under the same data split/evaluation protocol.
 
-- PD: https://github.com/zyang1580/PDA/tree/main
-- DICE: https://github.com/tsinghua-fib-lab/DICE
-- DCCL: https://github.com/somestudies/DCCL
+- [PD](https://github.com/zyang1580/PDA/tree/main)
+- [DICE](https://github.com/tsinghua-fib-lab/DICE)
+- [DCCL](https://github.com/somestudies/DCCL)
 
 ⚙️ Hyperparameters:
 
