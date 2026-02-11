@@ -1,7 +1,7 @@
 # 🎯 DisCoRec: Disentangled Conformity-aware Recommendation with LLM-Guided Multi-View Learning
 
 ## 🧩 Framework
-<img width="1640" height="431" alt="WWW_framework" src="https://github.com/user-attachments/assets/441431ed-6ad9-44cb-a02e-adf92769cfb4" />
+<img width="1640" height="431" alt="SIGIR_framework" src="https://github.com/user-attachments/assets/cd4e2cc8-bb18-4d4b-b970-95ed0e2cb68e" />
 
 &nbsp;
 
